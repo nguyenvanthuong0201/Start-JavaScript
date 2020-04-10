@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!-- saved from url=(0064)file:///D:/Documents/GITHUB/Start-JavaScript/JS-Ch1/src/Pet.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Demo Đọc xuất dữ liệu</title>
+    <!-- Required meta tags -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <script src="./Demo Đọc xuất dữ liệu_files/jquery-3.3.1.slim.min.js.download" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="./Demo Đọc xuất dữ liệu_files/popper.min.js.download" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="./Demo Đọc xuất dữ liệu_files/bootstrap.min.js.download" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./Demo Đọc xuất dữ liệu_files/font-awesome.min.css">
+    <link rel="stylesheet" href="./Demo Đọc xuất dữ liệu_files/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+      <div class="container">
+          <img src="./Demo Đọc xuất dữ liệu_files/PET.png" alt="">
+          <button type="button" class="text-center btn btn-outline-primary">MÔ HÌNH - KĨ THUẬT - CÔNG NGHỆ
+              <br>
+            <small> ĐƠN GIẢN </small>
+          </button>
+      </div>
+      <div class="container">
+          <button type="button" id="Th_Thong_bao" class="btn btn-outline-warning btn-block">Dữ liệu không hợp lệ</button>
+      </div>
+      <div class="container">
+          <fieldset>
+              <legend> Nhập xuất dữ liệu</legend>
+              Họ tên : <input type="text" name="" id="Th_Ho_ten" style="width: 300px;">
+              <div id="Th_Loi_chao" class="mt-3 mb-3">[Xuất câu chào ]</div>
+              <button type="button" class="btn btn-outline-primary" id="Th_Dong_y">Đồng ý</button>
+          </fieldset>
+      </div>
+     <script>
+         
+         Th_Dong_y.onclick=()=>{
+            // var Ho_Ten = Th_Ho_ten.value;
+            // if(Ho_Ten!="")
+            // {
+            //     Th_Thong_bao.innerHTML="Dữ liệu hợp lệ";
+            //     Th_Chao_hoi.innerHTML="Chào bạn "+ Ho_Ten;
+            // }
+            // else
+            // {
+            //     Th_Thong_bao.innerHTML="Dữ liệu không hợp lệ";
+            //     Th_Ho_ten.focus();
+            // }
+            // {
+            // var Ho_ten=Th_Ho_ten.value;
+            // if(Ho_ten!="")
+            // {
+            //     Th_Loi_chao.innerHTML="chào bạn "+Ho_ten;
+            //     Th_Thong_bao.innerHTML="Dữ liệu hợp lệ";
+            // }
+            // else{
+            //     Th_Thong_bao.innerHTML="Họ tên không rỗng";
+            //     Th_Ho_ten.focus();
+            // }
+            
+            //  }
+            Th_Dong_y.onclick=()=>
+            {
+                var Ho_ten=Th_Ho_ten.value;
+                if(Ho_ten != "")
+                {
+                    Th_Thong_bao.innerHTML="Dữ liệu hợp lệ";
+                    Th_Loi_chao.innerHTML="Xin chào " + Ho_ten;
+                }
+                else
+                {
+                    Th_Thong_bao.innerHTML="Dữ liệu không hợp lệ";
+                    Th_Ho_ten.focus();
+
+                }
+            }
+         }
+     </script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    
+  
+</body></html>
