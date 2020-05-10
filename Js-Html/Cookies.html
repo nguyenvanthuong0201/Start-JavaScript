@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookies</title>
+    <script>
+        function clicker(){
+             console.log("Button clicker");
+            // let key =document.myForm.name1.value;
+            // let value1 =document.myForm.name2.value; 3
+
+            // localStorage.setItem(key,value1);
+           // localStorage.removeItem("1");
+
+            // console.log(localStorage.getItem("2"));
+            //document.cookie ="username=Thương đẹp trai";
+            let expiration = new Date();
+            expiration.setMonth(expiration.getMonth()+1);
+            document.cookie ="username=Thương đẹp trai;expires="+expiration.toUTCString()+";";
+
+        }
+    </script>
+</head>
+<body>
+    <form name="myForm"> 
+      <label for=""></label>
+       Enter key info : <input type="text"
+        class="form-control" name="name1" id="" aria-describedby="helpId" >
+        <br>
+        Enter value1 info : <input type="text"
+        class="form-control" name="name2" id="" aria-describedby="helpId" >
+        <br>
+        <input type="button" value="submit" onclick="clicker()">
+    </form>
+</body>
+</html>

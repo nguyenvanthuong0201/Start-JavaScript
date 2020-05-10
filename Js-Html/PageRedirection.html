@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Redirection</title>
+</head>
+<body>
+    <p id="status">Thương đẹp trai nè </p>
+    <script>
+        function redirectPage() {
+            window.location="https://www.facebook.com/";
+        }
+        function reload() {
+            window.location.reload();
+        }
+        function textIntoPage() {
+            document.getElementById("status").innerHTML="đẹp trai thật mà ,hí hí ";
+        }
+
+    </script>
+    <input type="button" value="facebook page" onclick="redirectPage()">
+    <input type="button" value="Reload page" onclick="reload()">
+    <input type="button" value="text" onclick="textIntoPage()">
+</body>
+</html>
