@@ -37,10 +37,28 @@ employee = [employee1, employee2, employee3, employee4, employee5];
 
 // let newlist = employee.map((employee) => employee["salary"] *=1.2);
 // console.log(newlist);
+
+
 // ////////////////////// reduce
 // let finaltotalSarary = newlist.reduce((a, b)=>a + b);
 // console.log(finaltotalSarary)
 
+///Filter
+// let BasicEmployee = employee.filter((employee)=>employee["salary"] <=1030);
+// console.log(BasicEmployee)
 
-let BasicEmployee = employee.filter((employee)=>employee["salary"] <=1030);
-console.log(BasicEmployee)
+
+//Using some
+let employeeSome= employee.some((employee)=> employee["salary"]<1000)
+console.log(employeeSome)
+
+
+///using find
+let employeeFind= employee.find((employee)=> employee["name"] === "Thanh");
+console.log(employeeFind)
+
+
+//using file index.
+
+let employeeFindu= employee.findIndex((employee)=> employee["name"] === "Thanh");
+console.log(employeeFindu)

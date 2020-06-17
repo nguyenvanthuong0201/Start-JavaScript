@@ -77,6 +77,27 @@ function *myGenerator(name) {
     yield `bye bye ${name} đẹp trai`
 }
 var my = myGenerator("Thương");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 console.log(my.next());
 console.log(my.next());
 console.log(my.next());
