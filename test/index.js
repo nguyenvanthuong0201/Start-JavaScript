@@ -11,16 +11,17 @@
 // thuong.bye("D.Hiếu");
 
  
-function myModule() {
-  this.hello = function() {
-    return 'hello!';
-  }
+// function myModule() {
+//   this.hello = function() {
+//     return 'hello!';
+//   }
  
-  this.goodbye = function() {
-    return 'goodbye!';
-  }
-}
+//   this.goodbye = function() {
+//     return 'goodbye!';
+//   }
+// }
  
-module.exports = myModule;
-myModule();
- 
+// module.exports = myModule;
+// myModule();
+var msg = require('../js_callback/index1');
+console.log(msg)

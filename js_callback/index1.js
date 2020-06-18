@@ -12,7 +12,4 @@
 // }
 // uong_nuoc(user);
 
-var myModule = require('myModule');
-var myModuleInstance = new myModule();
-myModuleInstance.hello(); // 'hello!'
-myModuleInstance.goodbye(); // 'goodbye!'
+module.exports="Hello world"
